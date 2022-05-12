@@ -23,6 +23,7 @@ jobs:
         run: |
           pip install -r requirements.txt
       - name: Build Sphinx docs
+        working-directory: ./docsource
         run: |
           make html
 
